@@ -6,6 +6,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+# Filament Laravel Project
+
+Ini adalah proyek **Employee Management Report** yang dibangun menggunakan **Laravel** dan **Filament**.  
+Aplikasi ini berfungsi untuk mengelola laporan karyawan, menilai kontrak kerja, serta merekap data dalam bentuk PDF.
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Laravel** – Framework PHP untuk pengembangan backend.
+- **Filament** – Admin panel modern untuk Laravel.
+- **Livewire** – Membantu membuat UI interaktif tanpa JavaScript kompleks.
+- **Filament Shield** – Mengelola role & permission dengan mudah.
+
+## 📌 Apa Itu Filament?
+
+**Filament** adalah framework admin panel berbasis **Laravel Livewire**, yang mempermudah pembuatan dashboard dan manajemen data tanpa perlu banyak coding.  
+
+Fitur utama Filament:  
+✅ CRUD otomatis dengan **Resource Management**  
+✅ Form builder yang powerful  
+✅ Filter dan tabel dinamis  
 
 ## About Laravel
 
