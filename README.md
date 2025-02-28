@@ -6,26 +6,27 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
 # Filament Laravel Project
 
-Ini adalah proyek **Employee Management Report** yang dibangun menggunakan **Laravel** dan **Filament**.  
-Aplikasi ini berfungsi untuk mengelola laporan karyawan, menilai kontrak kerja, serta merekap data dalam bentuk PDF.
+This is an **Employee Management Report** project built using **Laravel** and **Filament**.  
+The application is designed to manage employee reports, evaluate contract performance, and generate PDF summaries.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
-- **Laravel** – Framework PHP untuk pengembangan backend.
-- **Filament** – Admin panel modern untuk Laravel.
-- **Livewire** – Membantu membuat UI interaktif tanpa JavaScript kompleks.
-- **Filament Shield** – Mengelola role & permission dengan mudah.
+- **Laravel** – A powerful PHP framework for web application development.
+- **Filament** – A modern admin panel for Laravel.
+- **Livewire** – Enables interactive UI without complex JavaScript.
+- **Filament Shield** – A package to manage roles and permissions efficiently.
 
-## 📌 Apa Itu Filament?
+## 📌 What is Filament?
 
-**Filament** adalah framework admin panel berbasis **Laravel Livewire**, yang mempermudah pembuatan dashboard dan manajemen data tanpa perlu banyak coding.  
+**Filament** is a Laravel admin panel framework built on **Livewire**, designed to make it easier to create dashboards and manage data with minimal coding.
 
-Fitur utama Filament:  
-✅ CRUD otomatis dengan **Resource Management**  
-✅ Form builder yang powerful  
-✅ Filter dan tabel dinamis  
+### Key Features of Filament:
+✅ Automated CRUD with **Resource Management**  
+✅ Powerful form builder  
+✅ Dynamic filters and tables  
 
 ## About Laravel
 
