@@ -7,6 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Filament Laravel Project
+
+This is an **Employee Management Report** project built using **Laravel** and **Filament**.  
+The application is designed to manage employee reports, evaluate contract performance, and generate PDF summaries.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
