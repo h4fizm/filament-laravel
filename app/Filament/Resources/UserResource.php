@@ -41,10 +41,10 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                Tabs::make('User Details') // Create main tab
+                Tabs::make('User Details')
                     ->columnSpan('full')
                     ->tabs([
-                        Tab::make('Basic Information') // First tab: General user information
+                        Tab::make('Basic Information')
                             ->icon('heroicon-o-user')
                             ->schema([
                                 TextInput::make('name')
@@ -53,7 +53,7 @@ class UserResource extends Resource
                                     ->maxLength(255)
                                     ->afterStateUpdated(
                                         fn($state, callable $set) =>
-                                        $set('name', trim($state)) // Remove extra spaces
+                                        $set('name', trim($state))
                                     )
                                     ->validationMessages([
                                         'required' => 'The name field is required!',
@@ -83,29 +83,25 @@ class UserResource extends Resource
                                     ->validationMessages([
                                         'required' => 'Please select a role!',
                                     ]),
-                            ]),
 
-                        Tab::make('Privacy') // Second tab: Password
-                            ->icon('heroicon-o-lock-closed')
-                            ->schema([
                                 TextInput::make('password')
-                                    ->label('New Password')
+                                    ->label('Password')
                                     ->password()
                                     ->required()
-                                    ->nullable() // Allow empty password
-                                    ->minLength(8) // Minimal password length 8 characters
-                                    ->rule(Password::min(8)) // Only enforce minimum length rule
-                                    ->dehydrateStateUsing(fn($state) => !empty($state) ? bcrypt($state) : null) // Hash if filled, keep null if empty
-                                    ->afterStateHydrated(fn($state, callable $set) => $set('password', '')) // Clear input after loading
-                                    ->dehydrated(fn($state) => !empty($state)) // Exclude password if empty
+                                    ->nullable()
+                                    ->minLength(8)
+                                    ->rule(Password::min(8))
+                                    ->dehydrateStateUsing(fn($state) => !empty($state) ? bcrypt($state) : null)
+                                    ->afterStateHydrated(fn($state, callable $set) => $set('password', ''))
+                                    ->dehydrated(fn($state) => !empty($state))
                                     ->validationMessages([
                                         'min' => 'Password must be at least 8 characters!',
                                     ]),
                             ]),
                     ])
-
             ]);
     }
+
 
     public static function table(Table $table): Table
     {
