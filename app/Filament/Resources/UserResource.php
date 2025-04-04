@@ -44,7 +44,7 @@ class UserResource extends Resource
                 Tabs::make('User Details') // Create main tab
                     ->columnSpan('full')
                     ->tabs([
-                        Tab::make('Basic Information') // First tab: General user information
+                        Tab::make('Basic Information') // Single tab with all fields
                             ->icon('heroicon-o-user')
                             ->schema([
                                 TextInput::make('name')
@@ -83,11 +83,7 @@ class UserResource extends Resource
                                     ->validationMessages([
                                         'required' => 'Please select a role!',
                                     ]),
-                            ]),
 
-                        Tab::make('Privacy') // Second tab: Password
-                            ->icon('heroicon-o-lock-closed')
-                            ->schema([
                                 TextInput::make('password')
                                     ->label('New Password')
                                     ->password()
@@ -103,9 +99,9 @@ class UserResource extends Resource
                                     ]),
                             ]),
                     ])
-
             ]);
     }
+
 
     public static function table(Table $table): Table
     {
